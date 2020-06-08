@@ -9,3 +9,6 @@ global geometrictransformed;
 
 % Restored Image
 global restoredimage;
+
+% Map
+global ifReturned;

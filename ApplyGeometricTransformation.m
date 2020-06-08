@@ -17,12 +17,7 @@ function ApplyGeometricTransformation( transf )
             %disp(inverse_pos);
             
             if x >= 1 && x <= horizontal && y >= 1 && y <= vertical
-                x1 = x - floor(x);
-                y1 = y - floor(y);
-                output(i, j) = input(floor(x), floor(y)) * (1 - x1) * (1 - y1) + ...
-                               input(floor(x), ceil(y)) * (1 - x1) * y1 + ...
-                               input(ceil(x), floor(y)) * x1 * (1 - y1) + ...
-                               input(ceil(x), ceil(y)) * x1 * y1;
+                output(i, j) = input(floor(x), floor(y));
             end
         end
     end
